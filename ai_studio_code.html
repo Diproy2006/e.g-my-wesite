@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextHire Freelance Studio | Professional Digital & Administrative Services</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="NextHire Freelance Studio offers high-quality freelance services including Data Entry, Virtual Assistant, ATS Resume Optimization, Presentation Design, and Web Research." />
+  <meta name="keywords" content="Freelance services, Virtual Assistant, Data Entry, ATS Resume, LinkedIn Optimization, Document Formatting, NextHire" />
+  <meta name="author" content="NextHire Freelance Studio" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="NextHire Freelance Studio - Professional Digital Services" />
+  <meta property="og:description" content="Helping businesses grow with professional freelance services, transparent pricing, and fast delivery." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis me">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2563eb;
+    }
+    
+    /* Glassmorphism */
+    .glass {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .dark .glass {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Pulse animation soft */
+    @keyframes pulse-slow {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.03); opacity: 1; }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 4s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Structured Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "NextHire Freelance Studio",
+    "url": "https://nexthire-studio.com",
+    "logo": "https://nexthire-studio.com/logo.png",
+    "description": "High-quality digital services including Data Entry, Virtual Assistance, Resume Writing, and Market Research.",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "telephone": "+1-800-555-0199"
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-300 selection:bg-brand-500 selection:text-white">
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brand-600 via-indigo-500 to-cyan-400 z-50 transition-all duration-150 w-0"></div>
+
+  <!-- Announcement Bar -->
+  <div class="bg-brand-900 text-slate-100 py-2 px-4 text-xs md:text-sm text-center font-medium relative z-40 flex items-center justify-center gap-2">
+    <span class="bg-brand-600 text-white text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-full">New</span>
+    <span>Special Offer: Get 15% OFF on your first project booking! Use code <strong class="text-cyan-300">NEXT15</strong></span>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 glass border-b border-slate-200/80 dark:border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          N
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white flex items-center gap-1">
+            NextHire <span class="text-brand-600 dark:text-brand-500">Studio</span>
+          </span>
+          <span class="text-[10px] text-slate-500 dark:text-slate-400 tracking-wider uppercase font-semibold">Freelance Services</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#home" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
+        <a href="#services" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Services</a>
+        <a href="#why-me" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Why Me</a>
+        <a href="#portfolio" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Portfolio</a>
+        <a href="#pricing" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Pricing</a>
+        <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">About</a>
+        <a href="#testimonials" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Reviews</a>
+        <a href="#faq" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">FAQ</a>
+        <a href="#blog" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Blog</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center space-x-3">
+        <!-- Dark Mode Toggle Button -->
+        <button id="themeToggle" aria-label="Toggle Dark Mode" class="p-2.5 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <i id="themeIcon" class="fa-solid fa-moon text-lg"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <button onclick="openModal('hireModal')" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-xl font-semibold text-sm text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/20 hover:shadow-lg transition-all active:scale-95">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Hire Me
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Open Mobile Navigation Menu" class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-3 pb-6 space-y-3">
+      <a href="#home" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Home</a>
+      <a href="#services" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Services</a>
+      <a href="#why-me" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Why Choose Me</a>
+      <a href="#portfolio" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Portfolio</a>
+      <a href="#pricing" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Pricing Plans</a>
+      <a href="#about" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">About Studio</a>
+      <a href="#faq" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">FAQ</a>
+      <a href="#blog" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Blog</a>
+      <a href="#contact" class="block py-2 text-slate-700 dark:text-slate-200 font-medium hover:text-brand-600">Contact Us</a>
+      <button onclick="openModal('hireModal')" class="w-full mt-2 py-3 bg-brand-600 text-white rounded-xl font-bold shadow-md">
+        <i class="fa-solid fa-paper-plane mr-2"></i> Hire Me Now
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-gradient-to-b from-blue-50/60 via-slate-50 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+    <!-- Abstract Gradient Bubbles Background -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-brand-500/20 to-indigo-500/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100/80 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800 text-xs sm:text-sm font-semibold">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span>Available for New Freelance Projects &amp; Contracts</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+            Helping Businesses Grow with <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-indigo-600 to-cyan-500">Professional Freelance Services</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+            High-quality digital services delivered on time with transparent communication, 99.8% accuracy, and affordable pricing tailored for entrepreneurs, startups, and growing enterprises.
+          </p>
+
+          <!-- Buttons & CTA -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button onclick="openModal('hireModal')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg shadow-brand-500/30 hover:shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+              <i class="fa-solid fa-rocket mr-2"></i> Hire Me Now
+            </button>
+            <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl border-2 border-slate-300 dark:border-slate-700 hover:border-brand-600 dark:hover:border-brand-500 text-slate-800 dark:text-slate-200 font-bold text-base transition-all text-center hover:bg-slate-100/50 dark:hover:bg-slate-900">
+              <i class="fa-solid fa-briefcase mr-2"></i> View Portfolio
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-center lg:justify-start gap-6 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>100% Confidentiality</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>Fast 24-Hour Delivery Options</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>Unlimited Revisions</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Glass Decorative Card Container -->
+            <div class="p-6 sm:p-8 rounded-3xl bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800 shadow-2xl relative z-10">
+              
+              <!-- User Profile Header -->
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="relative">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Lead Freelancer Profile" class="w-16 h-16 rounded-2xl object-cover ring-4 ring-brand-500/20" />
+                  <span class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full"></span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 dark:text-white text-lg">NextHire Studio</h3>
+                  <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold">Top Rated Freelance Specialist</p>
+                  <div class="flex items-center text-amber-400 text-xs mt-1 space-x-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-slate-600 dark:text-slate-400 font-bold ml-1">5.0 (280+ Reviews)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Performance Showcase Items -->
+              <div class="space-y-4">
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/50 dark:border-slate-700/50 flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 text-brand-600 dark:text-brand-300 flex items-center justify-center">
+                      <i class="fa-solid fa-file-invoice text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-400 uppercase font-semibold">Job Success</p>
+                      <p class="text-sm font-bold text-slate-800 dark:text-slate-100">100% Client Satisfaction</p>
+                    </div>
+                  </div>
+                  <span class="text-xs bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-bold px-2.5 py-1 rounded-full">Top 1%</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/50 dark:border-slate-700/50 flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 flex items-center justify-center">
+                      <i class="fa-solid fa-bolt text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-400 uppercase font-semibold">Avg Turnaround</p>
+                      <p class="text-sm font-bold text-slate-800 dark:text-slate-100">Under 24 Hours</p>
+                    </div>
+                  </div>
+                  <span class="text-xs bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 font-bold px-2.5 py-1 rounded-full">Express</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/50 dark:border-slate-700/50 flex items-center justify-between">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300 flex items-center justify-center">
+                      <i class="fa-solid fa-shield-halved text-lg"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-400 uppercase font-semibold">Security</p>
+                      <p class="text-sm font-bold text-slate-800 dark:text-slate-100">NDA Protected Work</p>
+                    </div>
+                  </div>
+                  <span class="text-xs bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-bold px-2.5 py-1 rounded-full">Guaranteed</span>
+                </div>
+              </div>
+
+              <!-- Floating Accent Badge -->
+              <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs font-semibold text-slate-500 dark:text-slate-400">
+                <span><i class="fa-solid fa-earth-americas text-brand-500 mr-1"></i> Serving Clients Worldwide</span>
+                <a href="#contact" class="text-brand-600 dark:text-brand-400 hover:underline">Get a Quote &rarr;</a>
+              </div>
+
+            </div>
+
+            <!-- Background Decorative Blur Circle -->
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-cyan-500/20 rounded-full blur-2xl"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTICS SECTION (ANIMATED COUNTERS) -->
+  <section id="stats" class="py-12 bg-white dark:bg-slate-900 border-y border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        
+        <div class="p-4">
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">
+            <span class="counter" data-target="850">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Projects Completed</p>
+        </div>
+
+        <div class="p-4">
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">
+            <span class="counter" data-target="320">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Happy Clients</p>
+        </div>
+
+        <div class="p-4">
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">
+            <span class="counter" data-target="45">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Countries Served</p>
+        </div>
+
+        <div class="p-4">
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">
+            <span class="counter" data-target="6">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Years Experience</p>
+        </div>
+
+        <div class="p-4 col-span-2 md:col-span-1">
+          <p class="text-3xl sm:text-4xl font-extrabold text-brand-600 dark:text-brand-400 tracking-tight">
+            4.99<span class="text-amber-400 text-2xl">★</span>
+          </p>
+          <p class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">Average Rating</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION WITH SEARCH AND FILTER -->
+  <section id="services" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Our Specialized Offerings</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Explore Professional Freelance Services</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+          Browse through 20 specialized skill sets carefully tailored to optimize your operations, branding, and personal growth.
+        </p>
+
+        <!-- Search & Category Filter Controls -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white dark:bg-slate-900 p-3 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+          <!-- Search Input -->
+          <div class="relative w-full sm:w-80">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input type="text" id="serviceSearchInput" placeholder="Search services (e.g. Resume, Excel)..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border-none text-slate-800 dark:text-slate-100 text-sm focus:ring-2 focus:ring-brand-500 outline-none" />
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap gap-2 w-full sm:w-auto justify-center">
+            <button onclick="filterServices('all')" class="service-filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 text-white transition-all">All (20)</button>
+            <button onclick="filterServices('admin')" class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-brand-50 hover:text-brand-600 transition-all">Admin &amp; Data</button>
+            <button onclick="filterServices('career')" class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-brand-50 hover:text-brand-600 transition-all">Career &amp; Writing</button>
+            <button onclick="filterServices('design')" class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-brand-50 hover:text-brand-600 transition-all">Design &amp; Media</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Grid (20 items) -->
+      <div id="servicesContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Service 1 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="data entry">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-keyboard"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Data Entry</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Accurate, fast data entry into spreadsheets, databases, CRMs, and web forms with 99.9% precision guarantee.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$15 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Data Entry', 'High accuracy data entry, data cleansing, formatting, and database management.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="virtual assistant">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Virtual Assistant</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Full-spectrum remote admin assistance, schedule coordination, travel planning, and daily inbox management.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$20 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Virtual Assistant', 'Delegate your daily administrative burden to a seasoned professional assistant.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="resume writing">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-file-user"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Resume Writing</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Professional, modern resume re-writing designed to highlight achievements and grab executive attention.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$45 <span class="text-xs font-normal text-slate-500">/project</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Resume Writing', 'Crafting compelling career narratives that land top-tier job interviews.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="ats resume optimization">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">ATS Resume Optimization</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Keyword formatting and structural adjustments engineered to bypass Automated Tracking Systems effortlessly.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$50 <span class="text-xs font-normal text-slate-500">/project</span></p>
+            </div>
+            <button onclick="triggerServiceModal('ATS Optimization', 'Ensure your application beats the robot screeners with strategically structured keywords.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="cover letter writing">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Cover Letter Writing</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Tailored, persuasive cover letters that communicate enthusiasm, relevance, and value directly to hiring managers.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$25 <span class="text-xs font-normal text-slate-500">/doc</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Cover Letter Writing', 'Custom persuasive letters aligned directly with your target job description.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="linkedin profile optimization">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">LinkedIn Optimization</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Headline, summary, experience overhaul, and banner recommendations to boost profile search rankings by 5x.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$60 <span class="text-xs font-normal text-slate-500">/profile</span></p>
+            </div>
+            <button onclick="triggerServiceModal('LinkedIn Optimization', 'Maximize inbound recruiter inquiries with a fully search-optimized profile.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="excel spreadsheet work formulas macros">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Excel &amp; Spreadsheet Work</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Advanced VLOOKUP, INDEX/MATCH, Pivot Tables, automated macros, financial models, and clean dashboard creation.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$30 <span class="text-xs font-normal text-slate-500">/sheet</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Excel & Spreadsheet Work', 'Complex formulas, automation scripts, and custom interactive dashboards.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="pdf conversion fillable forms">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">PDF Conversion &amp; Forms</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Convert PDF to Word/Excel, create interactive fillable PDF forms, split, merge, and compress documents.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$15 <span class="text-xs font-normal text-slate-500">/batch</span></p>
+            </div>
+            <button onclick="triggerServiceModal('PDF Conversion', 'Seamless document conversions, OCR text extraction, and fillable form creation.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="web research lead generation">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Web Research</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              In-depth online data mining, competitor analysis, lead generation lists, and verified contact info extraction.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$20 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Web Research', 'Thorough internet research, target audience mining, and verified lead lists.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="copy typing transcription">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-i-cursor"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Copy Typing</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Speedy, error-free typing from handwritten notes, scanned images, audio files, or legacy books into clean Word documents.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$10 <span class="text-xs font-normal text-slate-500">/1k words</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Copy Typing', 'High-speed typing with 100% manual accuracy for scanned books or handwritten notes.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="email management inbox cleanup">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Email Management</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Inbox zero cleanup, label organization, canned responses, spam filtering, and urgent email triage.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$20 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Email Management', 'Reach Inbox Zero efficiently with categorized folders and streamlined filters.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="ai content assistance editing chatgpt prompt">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">AI Content Assistance</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Humanizing AI text, fact-checking, prompt engineering, SEO editing, and refining ChatGPT blog drafts.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$25 <span class="text-xs font-normal text-slate-500">/article</span></p>
+            </div>
+            <button onclick="triggerServiceModal('AI Content Assistance', 'Transform raw AI outputs into engaging, human-sounding, SEO-ready articles.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 13 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="career" data-title="document formatting word template">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-file-lines"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Document Formatting</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Styling corporate reports, eBooks, user manuals, academic papers, and MS Word branding templates.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$20 <span class="text-xs font-normal text-slate-500">/doc</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Document Formatting', 'Professional typographic cleanup, table design, headers, and footer alignment.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 14 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="design" data-title="presentation design powerpoint pitch deck">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-display"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Presentation Design</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              High-converting investor pitch decks, corporate PowerPoint presentations, Google Slides, and Keynote design.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$5 <span class="text-xs font-normal text-slate-500">/slide</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Presentation Design', 'Custom slide layouts, infographic graphics, and investor-ready pitch decks.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 15 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="design" data-title="canva design social banners">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Canva Graphic Design</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Editable Canva templates, social media posts, promotional flyers, brochures, banners, and ebooks.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$12 <span class="text-xs font-normal text-slate-500">/design</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Canva Graphic Design', 'Visually stunning, fully editable Canva templates for all marketing channels.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 16 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="design" data-title="social media assistance management scheduling">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Social Media Assistance</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Post scheduling, hashtag research, caption drafting, community engagement, and profile growth tracking.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$18 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Social Media Assistance', 'Consistent content distribution, hashtag optimization, and community engagement.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 17 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="customer support live chat helpdesk tickets">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Customer Support</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Live chat assistance, email helpdesk ticketing (Zendesk/Freshdesk), and polite dispute resolution.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$18 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Customer Support', 'Reliable, friendly 24/7 customer service across tickets, live chat, and emails.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 18 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="administrative support office tasks">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Administrative Support</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Back-office operational support, order processing, invoicing, calendar scheduling, and report compilation.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$20 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Administrative Support', 'Comprehensive back-office administrative management tailored to your workflow.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 19 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="business research market benchmarking">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Business Research</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Industry benchmarking, market sizing, competitor pricing breakdowns, and strategic executive briefings.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$35 <span class="text-xs font-normal text-slate-500">/hr</span></p>
+            </div>
+            <button onclick="triggerServiceModal('Business Research', 'Actionable market intelligence reports to support high-stakes business decisions.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 20 -->
+        <div class="service-card group p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between" data-category="admin" data-title="file organization cloud drive google drive Dropbox">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-folder-tree"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">File Organization</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Google Drive, Dropbox, and OneDrive folder restructuring, systematic file naming, and archive decluttering.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-slate-400 uppercase font-semibold">Starting at</span>
+              <p class="text-base font-extrabold text-brand-600 dark:text-brand-400">$25 <span class="text-xs font-normal text-slate-500">/project</span></p>
+            </div>
+            <button onclick="triggerServiceModal('File Organization', 'Clean cloud file architecture for easy team retrieval and enterprise security.')" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-brand-600 hover:text-white text-slate-700 dark:text-slate-200 text-xs font-semibold transition-all">
+              Learn More &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE ME SECTION -->
+  <section id="why-me" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Unmatched Work Standard</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Why Work With NextHire Studio?</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base">
+          I deliver agency-level quality with the agility, speed, and clear communication of a dedicated freelance partner.
+        </p>
+      </div>
+
+      <!-- Feature Grid (9 Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Fast Delivery</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Swift turnarounds with strict adherence to timelines. Emergency 24-hour turnaround packages available.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">High Accuracy</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Meticulous multi-tier quality checks ensure error-free spreadsheets, document styling, and polished copy.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Affordable Pricing</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Transparent, fixed or hourly rates with zero hidden fees. Premier agency outcomes at freelancer prices.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-rotate-left"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Unlimited Revisions</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Your satisfaction is guaranteed. Adjustments and minor tweaks are made promptly until you are 100% happy.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Secure Communication</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            All client files, documents, and credentials are kept under strict confidentiality and standard NDAs.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Professional Quality</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            International studio standards in formatting, presentation aesthetics, and data integrity.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Client Satisfaction</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            A proven track record with over 850 completed contracts and 5-star ratings from top companies globally.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">On-Time Delivery</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Never miss a milestone. Milestones are planned thoroughly with status updates provided every step of the way.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md shadow-brand-500/20">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">24/7 Support</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Responsive support around the clock via Email, WhatsApp, or Live Chat to accommodate all time zones.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Proof of Excellence</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Featured Project Portfolio</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base">
+          Take a look at recent work delivered for clients across SaaS, Finance, Healthcare, Real Estate, and Tech.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="mt-8 flex flex-wrap justify-center gap-2">
+          <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 text-white">All Projects</button>
+          <button onclick="filterPortfolio('resume')" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-brand-50">Resume &amp; Career</button>
+          <button onclick="filterPortfolio('data')" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-brand-50">Data &amp; Research</button>
+          <button onclick="filterPortfolio('design')" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-brand-50">Design &amp; Pitch Decks</button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="portfolio-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-md hover:shadow-2xl transition-all duration-300 group" data-category="resume">
+          <div class="relative overflow-hidden h-52 bg-slate-100 dark:bg-slate-800">
+            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80" alt="Executive ATS Resume Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 left-3 bg-brand-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Executive Resume</div>
+          </div>
+          <div class="p-6">
+            <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold mb-1">Industry: Technology &amp; SaaS</p>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">VP of Engineering ATS Resume Overhaul</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+              Rewrote and formatted executive resume with targeted Keywords resulting in 4 interviews within 10 days.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">ATS Optimization</span>
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">LinkedIn Optimization</span>
+            </div>
+            <button onclick="openProjectModal('VP Engineering ATS Resume Overhaul', 'Delivered complete ATS optimization, keyword insertion, cover letter alignment, and LinkedIn transformation for a tech executive leading to multiple job offers.')" class="w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 dark:text-brand-400 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all text-center">
+              View Case Study &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-md hover:shadow-2xl transition-all duration-300 group" data-category="data">
+          <div class="relative overflow-hidden h-52 bg-slate-100 dark:bg-slate-800">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="E-Commerce Sales Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Excel Automation</div>
+          </div>
+          <div class="p-6">
+            <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold mb-1">Industry: E-Commerce &amp; Retail</p>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Interactive Financial Sales Dashboard</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+              Consolidated 50,000+ rows of raw transaction data into a real-time automated KPI tracker with macros.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">MS Excel</span>
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">VBA Macros</span>
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">Pivot Tables</span>
+            </div>
+            <button onclick="openProjectModal('Interactive Sales Dashboard', 'Automated data cleanup pipelines, dynamic charts, and conditional formatting rules for multi-channel sales forecasting.')" class="w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 dark:text-brand-400 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all text-center">
+              View Case Study &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-md hover:shadow-2xl transition-all duration-300 group" data-category="design">
+          <div class="relative overflow-hidden h-52 bg-slate-100 dark:bg-slate-800">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Investor Pitch Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Pitch Deck</div>
+          </div>
+          <div class="p-6">
+            <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold mb-1">Industry: FinTech Startup</p>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Series A Pitch Deck Design (22 Slides)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+              Designed investor pitch deck with modern visual infographics that helped client raise $1.5M funding.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">PowerPoint</span>
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">Infographics</span>
+              <span class="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded font-medium">Canva</span>
+            </div>
+            <button onclick="openProjectModal('Series A Pitch Deck Design', 'Custom vector icons, clear financial breakdown charts, and high-impact typography designed for investor presentations.')" class="w-full py-2.5 rounded-xl border border-brand-600 text-brand-600 dark:text-brand-400 font-bold text-xs hover:bg-brand-600 hover:text-white transition-all text-center">
+              View Case Study &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORKFLOW PROCESS SECTION -->
+  <section id="process" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Simple &amp; Transparent</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">How We Work Together</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base">
+          A seamless 6-step project execution workflow designed for total clarity and stress-free project completion.
+        </p>
+      </div>
+
+      <!-- Process Steps -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative">
+        
+        <!-- Step 1 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">1</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Initial Inquiry</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Reach out via the hire form or WhatsApp message with your project scope.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">2</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Requirements</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">We discuss target objectives, timelines, budgets, and file assets needed.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">3</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Planning &amp; Quote</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Receive a clear fixed-price proposal with milestone deadlines.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">4</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Work Execution</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Work is executed with regular updates and status checkpoints.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">5</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Client Review</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">You review drafts and request any necessary adjustments or tweaks.</p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="relative p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-center">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold text-base flex items-center justify-center mx-auto mb-4 shadow-md">6</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-base mb-2">Final Delivery</h3>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">Final clean files and master assets delivered along with full support.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Flexible Pricing Plans</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Simple, Transparent Investment</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base">
+          Choose a plan that fits your current operational needs, or request a custom package.
+        </p>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Basic Plan -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-lg flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 text-xs font-bold rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 uppercase">Basic</span>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mt-4">Small Tasks</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ideal for quick single tasks and basic admin fixes.</p>
+            <div class="mt-6">
+              <span class="text-4xl font-black text-slate-900 dark:text-white">$29</span>
+              <span class="text-xs text-slate-500"> / task starting price</span>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> Single Task Execution</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> 24 to 48 Hour Turnaround</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> 2 Standard Revisions</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> Basic Formatting &amp; Editing</li>
+              <li class="flex items-center gap-3 text-slate-400"><i class="fa-solid fa-xmark text-slate-400"></i> Priority 24/7 Support</li>
+            </ul>
+          </div>
+
+          <button onclick="openModal('hireModal')" class="mt-8 w-full py-3.5 rounded-xl border-2 border-brand-600 text-brand-600 dark:text-brand-400 font-bold text-sm hover:bg-brand-600 hover:text-white transition-all">
+            Choose Basic Plan
+          </button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-lg flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 text-xs font-bold rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 uppercase">Standard</span>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mt-4">Growing Business</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Perfect for ongoing admin support &amp; career resumes.</p>
+            <div class="mt-6">
+              <span class="text-4xl font-black text-slate-900 dark:text-white">$89</span>
+              <span class="text-xs text-slate-500"> / package</span>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> Multi-document / Multi-task Support</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> 24-Hour Express Delivery</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> 5 Revisions Included</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> Source Files &amp; Raw Data Included</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-500"></i> Direct Email Support</li>
+            </ul>
+          </div>
+
+          <button onclick="openModal('hireModal')" class="mt-8 w-full py-3.5 rounded-xl border-2 border-brand-600 text-brand-600 dark:text-brand-400 font-bold text-sm hover:bg-brand-600 hover:text-white transition-all">
+            Choose Standard Plan
+          </button>
+        </div>
+
+        <!-- Premium Plan (HIGHLIGHTED) -->
+        <div class="p-8 rounded-3xl bg-gradient-to-b from-brand-900 to-indigo-950 text-white shadow-2xl relative border-2 border-brand-500 flex flex-col justify-between transform lg:-translate-y-2">
+          <div class="absolute -top-3.5 right-6 bg-brand-500 text-white text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow-md">
+            Most Popular
+          </div>
+          <div>
+            <span class="px-3 py-1 text-xs font-bold rounded-full bg-brand-800 text-brand-200 uppercase">Premium</span>
+            <h3 class="text-2xl font-bold text-white mt-4">Complete Studio Support</h3>
+            <p class="text-xs text-brand-200 mt-1">Comprehensive end-to-end dedicated assistance &amp; custom strategy.</p>
+            <div class="mt-6">
+              <span class="text-4xl font-black text-white">$199</span>
+              <span class="text-xs text-brand-200"> / retainer or project</span>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-xs text-brand-100">
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Unlimited Tasks / Priority Queue</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Same-Day / 12-Hour Emergency Delivery</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Unlimited Revisions</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Full Custom Branding &amp; Raw Assets</li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Dedicated 24/7 WhatsApp &amp; Zoom Support</li>
+            </ul>
+          </div>
+
+          <button onclick="openModal('hireModal')" class="mt-8 w-full py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm shadow-lg transition-all">
+            Get Started Now
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Client Feedback</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Trusted by Leaders Worldwide</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-base">
+          Read real reviews from international entrepreneurs and business leaders who rely on NextHire Studio.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 italic leading-relaxed">
+              "NextHire Studio completely restructured our sales tracking system in MS Excel. The automated macros saved our team at least 15 hours a week! Exceptionally professional work."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="David Miller" class="w-11 h-11 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-slate-900 dark:text-white text-sm">David Miller</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">CEO, TechFlow Inc. (United States 🇺🇸)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 italic leading-relaxed">
+              "My updated ATS resume and LinkedIn profile turned heads immediately. I landed 3 interviews in my first week of applying to top European tech firms. Worth every penny!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Sarah Jenkins" class="w-11 h-11 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-slate-900 dark:text-white text-sm">Sarah Jenkins</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Senior Product Manager (United Kingdom 🇬🇧)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 italic leading-relaxed">
+              "Fast, reliable, and extremely detail-oriented. NextHire Studio manages our email backlogs and presentation decks with top-tier precision. Highly recommended!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-200/60 dark:border-slate-700/60">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Liam O'Connor" class="w-11 h-11 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-slate-900 dark:text-white text-sm">Liam O'Connor</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Operations Director (Australia 🇦🇺)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Container -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="About NextHire Studio" class="rounded-3xl shadow-2xl w-full object-cover border border-slate-200 dark:border-slate-800" />
+            
+            <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800">
+              <p class="text-3xl font-extrabold text-brand-600 dark:text-brand-400">6+ Years</p>
+              <p class="text-xs font-semibold text-slate-600 dark:text-slate-400">Delivering Freelance Excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right About Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">About NextHire Freelance Studio</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Driven by Precision, Quality &amp; Client Growth</h3>
+          
+          <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+            At NextHire Freelance Studio, we bridge the gap between busy executives, business owners, and world-class digital support. Whether you need administrative optimization, ATS-compliant resume writing, high-impact PowerPoint pitch decks, or complex Excel automation, we deliver agency-grade results with speed and personal care.
+          </p>
+
+          <!-- Mission & Vision Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold mb-3">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base mb-1">Our Mission</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                To empower businesses and professionals with top-tier, reliable, and accessible freelance execution.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold mb-3">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 dark:text-white text-base mb-1">Our Vision</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                To become the premier international choice for administrative, creative, and technical freelance services.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <button onclick="openModal('hireModal')" class="px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all">
+              Work With Us Today
+            </button>
+            <a href="#contact" class="text-sm font-bold text-brand-600 dark:text-brand-400 hover:underline">
+              Contact Us Directly &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (10 ACCORDION ITEMS) -->
+  <section id="faq" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-xs uppercase font-extrabold text-brand-600 dark:text-brand-400 tracking-wider">Got Questions?</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Frequently Asked Questions</p>
+        <p class="mt-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
+          Find answers to common questions regarding ordering, security, revisions, and payment options.
+        </p>
+      </div>
+
+      <!-- Accordion List -->
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- Q1 -->
+        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/40">
+          <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-slate-900 dark:text-white flex justify-between items-center text-sm sm:text-base">
+            <span>1. How do I place an order for a project?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200/50 dark:border-slate-700/50 leading-relaxed">
+            Click on any "Hire Me" button on this website or fill out the contact form below. You can specify your project details, required timeline, and budget. We will get back to you within 2 hours with a detailed quote!
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/40">
+          <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-slate-900 dark:text-white flex justify-between items-center text-sm sm:text-base">
+            <span>2. What payment methods are accepted?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200/50 dark:border-slate-700/50 leading-relaxed">
+            We accept major payment channels including PayPal, Stripe, Credit/Debit Cards, Wise, Direct Bank Wire Transfers, and Upwork/Fiverr custom offer contracts.
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/40">
+          <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-slate-900 dark:text-white flex justify-between items-center text-sm sm:text-base">
+            <span>3. Do you provide revisions if adjustments are needed?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200/50 dark:border-slate-700/50 leading-relaxed">
+            Yes! We offer unlimited revisions for standard and premium plans to ensure complete satisfaction. Any tweaks or formatting updates are addressed within 24 hours.
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800/40">
+          <button onclick="toggleFaq(this)" class="w-full text-left p-5 font-bold text-slate-900 dark:text-white flex justify-between items-center text-sm sm:text-base">
+            <span>4. Can you work on long-term contracts or monthly retainers?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200/50 dark:border-slate-700/50 leading-relaxed">
+            Absolutely! We frequently manage weekly and monthly retainers for administrative support, data entry, customer service management, and content creation.
+          </div>
+        </div>
+
+        <!-- Q5 -->
+   
